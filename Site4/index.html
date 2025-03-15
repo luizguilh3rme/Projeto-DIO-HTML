@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            -webkit-box-shadow: 17px 2px 18px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 17px 2px 18px 1px rgba(0,0,0,0.75);
+            box-shadow: 17px 2px 18px 1px rgba(0,0,0,0.75);
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot td{
+            background-color: gray;
+        }
+
+        table tbody tr:nth-child(even) td{
+            background-color: bisque;
+        }
+
+        table tbody tr:hover td{
+            background-color: rgb(73, 52, 167);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table sumary="Minha tabela de informações" width="400px" cellspacing="1" cellpadding="5" align="center">
+        <thead>
+            <tr>
+                <th colspan="2">Minha tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th title="Idade">Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="1">
+                <td>Luiz Guilherme</td>
+                <td>19</td>
+            </tr>
+            <tr id="2">
+                <td>Maria</td>
+                <td>14</td>
+            </tr>
+            <tr id="3">
+                <td>Luiza</td>
+                <td>47</td>
+            </tr>
+            <tr id="4">
+                <td>Uilson</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id="5">
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
